@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+  </head>
+
+
+
+
+
+  <head>
+    <title>${title}</title>
+    <link rel="stylesheet" href="../public/main.css">
+  </head>
+
+
+
+  <body>
+
+    <h1> My Todolist </h1>
+    <ul id="list">
+      ${todoRepository.map(book => `
+      <li id="book">${book.text}</li>
+
+      `).join('')}
+    </ul>
+
+
+
+  </body>
+
+</html>
